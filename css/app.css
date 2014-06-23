@@ -41,8 +41,8 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	transition: all 1s;
-	-webkit-transition: all 1s;
+	transition: top 1s;
+	-webkit-transition: top 1s;
 }
 
 #map_inner {

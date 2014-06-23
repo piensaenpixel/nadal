@@ -13,7 +13,6 @@
 
 
 /* helpers */
-.h-pr { position: relative; }
 .h-iblock { display: inline-block; margin-left: -5px; }
 .h-txt-center { text-align: center; }
 .h-txt-left { text-align: left; }
@@ -54,29 +53,7 @@
 .home-inner {
 	width: 50%;
 }
-	.home-title {
-		font: 100px 'Gotham-Ultra'; margin: 10px 0;}
-	.home-subtitle span:before {
-		content: "";
-		position: absolute; 
-		width: 40px;
-		top: 50%;
-		left: -50px;
-		height: 1px;
-		background: #fff;
-		display: block;
-	}
-	.home-subtitle span:after {
-		content: "";
-		position: absolute; 
-		width: 40px;
-		top: 50%;
-		right: -50px;
-		height: 1px;
-		background: #fff;
-		display: block;
-	}
-
+	.home-title { font: 100px 'Gotham-Ultra'; margin: 10px 0;}
 	.button { display: inline-block; margin-top: 40px; }
 	.button a {
 		display: block;

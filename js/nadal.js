@@ -12,10 +12,12 @@ function heightHome (e){
 
 window.addEventListener("load", function load(event){
   heightHome('#home');
+  heightHome('#map_inner');
 });
 
 window.addEventListener("resize", function load(event){
   heightHome('#home');
+  heightHome('#map_inner');
 });
 
 
@@ -24,4 +26,5 @@ play.addEventListener('click',function () {
   mapInner.style.top="0px";
   mapInner.style.opacity="1";
   homeInner.style.top="-100%";
+  homeInner.style.opacity="0";
 },false)

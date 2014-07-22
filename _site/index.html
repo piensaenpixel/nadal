@@ -7,12 +7,25 @@
 		<title>Nadal</title>
 		<link href="css/reset.css" type="text/css" rel="stylesheet" />
 		<link href="css/app.css" type="text/css" rel="stylesheet" />
+  		<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+
+    <script type="infowindow/html" id="event">
+        <div class="cartodb-popup">
+            hola
+        </div>
+    </script>
+    <script type="infowindow/html" id="torneo">
+        <div class="cartodb-popup">
+          adios
+        </div>
+    </script>
+
 	</head>
 
 	<body>
 		 <section id="home" class="h-valign h-txt-center">
 		 	<div class="h-iblock home-inner h-malign">
-		 		<h2 class="h-tupper">About</h2>
+		 		<h2 class="h-tupper home-subtitle"><span class="h-pr h-iblock">About</span></h2>
 		 		<h1 class="h-tupper home-title">Rafa Nadal</h1>
 		 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
 		 		<p class="button h-tupper" id="continue"><a href="#">Continue</a></p>
@@ -22,11 +35,183 @@
 		 </section>
 
 		 <section id="map_inner">
-		 	hola
-		 	<div id="map"></div>
+      <!--
+		 	<div class="inner-timeline">
+
+		 		<div class="timeline h-pr">
+		 			<span class="h-pa"></span>
+		 		</div>
+		 	</div>-->
+
+
+		 	<div id="map">
+
+        <!--
+        <div class="tooltip" style="left: 100px; top:100px;">
+          <h2 class="tooltip-year">1984</h2>
+          <h1 class="tooltip-title">Nace Rafa Nadal</h1>
+          <div class="tooltip-inner">
+            <div class="txt">
+              <h3 class="tooltip-place">Manacor</h3>
+              <p>Nació el 3 de junio de 1986 en Manacor, Isla de Mallorca, Baleares, (España). Sus padres son Ana María Parera y Sebastián Nadal, tiene una hermana menor, María Isabel, y es sobrino del exjugador de fútbol del FC Barcelona y del RCD Mallorca Miguel Ángel Nadal</p>
+            </div>
+            <div class="tooltip-media">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="tooltip tlt-01" style="left: 500px; top:100px;">
+          <h2 class="tooltip-year">2003</h2>
+          <h1 class="tooltip-title">Debuta en Wimbledon</h1>
+          <div class="tooltip-inner">
+            <div class="txt">
+              <h3 class="tooltip-place">Wimbledon</h3>
+              <p>2003 supone el debut de Nadal en sus dos primeros torneos del Grand Slam. En su primera participación en Wimbledon vence en primera ronda al croata Mario Ančić por 6-3, 6-4, 4-6 y 6-4,40 y en segunda ronda al británico Lee Childs por 6-2, 6-4 y 6-3,41 pero cae en la tercera ronda contra el tailandés Paradorn Srichaphan por 4-6, 4-6 y 2-6</p>
+            </div>
+            <div class="tooltip-media">
+                <iframe width="365" height="274" src="//www.youtube.com/embed/QX30JIMNITk" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+-->
+      </div>
 
 		 </section>
-		<script src="js/nadal.js"></script>
+	<script src="js/nadal.js"></script>
+
+    <script src="js/cartodb.uncompressed.js"></script>
+    <script src="js/odyssey.js"></script>
+
+
+
+    <script>
+
+    var story = Odyssey.Story();
+    var sublayer;
+
+
+      function openInfowindow(layer, latlng, cartodb_id, template) {
+        layer.getSubLayer(2).infowindow.set('template_name', $("#event").html());
+        layer.trigger('featureClick', null, latlng, null, { cartodb_id: cartodb_id }, 2);
+      }
+
+      function main() {
+
+        var O = Odyssey; 
+
+        seq = O.Triggers.Sequential();
+
+        var sql = cartodb.SQL ({user:'piensaenpixel'});
+
+        O.Triggers.Keys().left().then(seq.prev, seq)
+        O.Triggers.Keys().right().then(seq.next, seq)
+        
+
+        cartodb.createVis('map', 'http://piensaenpixel.cartodb.com/api/v2/viz/aaa4904e-fba5-11e3-acfe-0edbca4b5057/viz.json', {
+            shareable: false,
+            title: false,
+            description: false,
+            search: false,
+            tiles_loader: false
+        })
+        .done(function(vis, layers) {
+            map = vis.getNativeMap();
+            var templateByID = {};
+
+             map.options.maxZoom = 6;
+
+
+            // sublayer 3 contains the markers
+            sublayer = layers[1].getSubLayer(2);
+            var layer = layers[1];
+            layer.infowindow.bind('change:content');
+
+
+            sublayer.on('featureClick', function (e, latlong, pos, data){
+              var dataClick = data.cartodb_id;
+            })
+            layer.infowindow.bind('change:content', function() {
+              var data = layer.infowindow.get('content').data
+            })
+            sublayer.setInteraction(true);
+
+          sql.execute ( 'SELECT *, st_y(the_geom) as lat, st_x(the_geom) as lon FROM "nadal" ORDER BY cartodb_id').done(function (data) {
+
+
+
+              // Odyssey actions
+              function openInfoWindowAction(description, lat, lon, cartodb_id,template) {
+                return O.Action (function(){  
+                  var self = this;
+                  openInfowindow(layers[1], [+lat, +lon], cartodb_id, template);
+                  sublayer.infowindow.bind('domready', function ready() {
+                    sublayer.infowindow.unbind('domready', ready);
+                    self.finish();
+                  });
+                  return true;
+                })
+      
+              }
+
+              function closeInfoWindowAction() {
+                return O.Action (function(){  
+                  sublayer.infowindow.set('visibility',false);
+                })
+              } 
+
+
+
+
+              for (i=0; i < data.rows.length; ++i) {
+                  var row = data.rows[i];
+                  var layer = sublayer;
+                  templateByID[row.cartodb_id] = row.infowindow;
+                  story.addState(
+                    seq.step(i),
+                    O.Chain(
+                        closeInfoWindowAction(),
+                        map.actions.setView(L.latLng(row.lat, row.lon), 14),
+                        openInfoWindowAction(row.description, row.lat, row.lon, row.cartodb_id, row.infowindow)
+                    )
+                )
+              }
+          })
+
+        })
+        .error(function(err) {
+          console.log(err);
+        });
+      }
+
+      window.onload = main();
+
+
+
+    window.addEventListener("load", function(){
+
+
+        story.go(0);       
+        sublayer.setInteraction(true);
+
+/*
+        document.querySelector('#prev').addEventListener("click", function(e){
+           seq.prev()
+        });
+
+
+        document.querySelector('#next').addEventListener("click", function(e){
+           seq.next()
+        });*/
+
+
+    });
+
+
+
+
+    </script>
+
 
 
 	</body>

@@ -61,7 +61,8 @@
 	width: 50%;
 }
 	.home-title {
-		font: 100px 'Gotham-Ultra'; margin: 10px 0;}
+		font: 100px 'Gotham-Ultra'; margin: 10px 0;
+	}
 	.home-subtitle span:before {
 		content: "";
 		position: absolute; 
@@ -132,4 +133,120 @@
 		background-color: #ff5500;
 		display: inline-block;
 		top: -1px;
+	}
+/*reset cartodb infowindows */
+div.cartodb-popup { 
+	padding: 0;
+	background: none;
+	margin: 0;
+}
+
+/* infowindows */
+
+.tooltip {
+	z-index: 101;
+	max-width: 780px;
+	margin-bottom: 25px;
+	position: relative;
+}
+	.tooltip:after {
+		content: '';
+		position: absolute;
+		bottom: -14px;
+		left: 0;
+		width: 0;
+		height: 0;
+		margin-left: 28px;
+		border-left: 0px solid transparent;
+		border-right: 14px solid transparent;
+		border-top: 14px solid white;
+		z-index: 2;
+	}
+
+	.tooltip-title {
+		font: 35px 'Gotham-Ultra';
+		margin: 15px 0;
+		text-transform: uppercase;
+	}
+	.tooltip-year {
+		font: 32px 'Georgia';
+		text-transform: uppercase;
+	}
+		.tooltip-year:before {
+			content:"";
+			width: 70px;
+			height: 2px;
+			background: #fff;
+			display: block;
+			margin-bottom: 8px;
+		}
+
+	.tooltip-inner {
+		background: #fff;
+		width: auto;
+		overflow: hidden;
+	}
+		.tlt-01 .tooltip-inner {
+			background: #E97E4F;
+		}
+		.tlt-01 .tooltip-year:before {
+			background: #E97E4F;
+		}
+		.tlt-01 .tooltip-inner p {
+			color: #fff;
+		}
+		.tlt-01 .tooltip-place {
+			color: #e5e5e5;
+			color: rgba(255, 255, 255, .6);
+		}
+		.tooltip.tlt-01:after {
+			border-top: 14px solid #E97E4F;
+		}
+
+
+	.tooltip-inner p {
+		font: 18px/22px 'Georgia';
+		color: #333;
+	}
+	.tooltip-place {
+		font: 14px/22px 'Georgia';
+		color: #ccc;
+		text-transform: uppercase;
+		margin-bottom: 4px;
+	}
+	.tooltip-inner .txt {
+		padding: 25px;
+		width: 320px;
+		float: left;
+		display: inline;
+	}
+	.tlt-event .tooltip-inner .txt {
+		padding: 25px;
+		width: auto;
+		float: none;
+		display: block;
+	}
+	.tooltip-media {
+		float:right;
+		display: inline;
+	}
+		.tooltip-media iframe {
+			display: block;
+		}
+
+		
+
+.timeline { 
+    position: absolute;
+    left: 0;
+    top: 165px;
+    padding: 0;
+    right: 0;
+}
+	.timeline .time-inner { 
+	    background: #F86800;
+	    height: 4px;
+	    display: block; 
+	    -webkit-transition: width .6s;
+	    transition:width width .6s;
 	}

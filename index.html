@@ -5,49 +5,35 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Nadal</title>
+    <!-- Include CARTO VL JS -->
+    <script src="js/carto-vl.js"></script>
+    <!-- Include Mapbox GL JS -->
+    <script src="js/mapbox-gl-dev.js"></script>
+    <!-- Include Mapbox GL CSS -->
+    <link href="css/mapbox-gl-dev.css" rel="stylesheet" />
+
 		<link href="css/reset.css" type="text/css" rel="stylesheet" />
-		<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
     <link href="css/app.css" type="text/css" rel="stylesheet" />
 
-
-    <script type="infowindow/html" id="event">
-             <div class="tooltip tlt-event">
-              <h2 class="tooltip-year">{{{content.data.year}}}</h2>
-              <h1 class="tooltip-title">{{{content.data.title}}}</h1>
-              <div class="tooltip-inner">
-                <div class="txt">
-                  <h3 class="tooltip-place">{{{content.data.place}}}</h3>
-                  <p>{{{content.data.description}}}</p>
-                </div>
-              </div>
-            </div>
-    </script>
-    <script type="infowindow/html" id="torneo">
-          <div class="cartodb-popup" id="template_torneo">
-             <p>
-                template2
-                {{{content.data.title}}}
-             </p>
-             <div class="cartodb-popup-tip-container"></div>
-          </div>
-    </script>
-
-    <script type="infowindow/html" id="torneo01">
-        <div class="tooltip tlt-01">
-          <h2 class="tooltip-year">{{{content.data.year}}}</h2>
-          <h1 class="tooltip-title">{{{content.data.title}}}</h1>
-          <div class="tooltip-inner">
-            <div class="txt">
-              <h3 class="tooltip-place">{{{content.data.place}}}</h3>
-              <p>{{{content.data.description}}}</p>
-            </div>
-            <div class="tooltip-media">
-                <iframe width="365" height="274" src="//www.youtube.com/embed/QX30JIMNITk" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-    </script>
-
+    <style type="text/css">
+        #map {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+        .map-info {
+          background: rgba(255, 255, 255, .8);
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 20px;
+          z-index: 2;
+          color: #000;
+        }
+    </style>
 
 	</head>
 
@@ -71,175 +57,138 @@
 		 			<span class="h-pa"></span>
 		 		</div>
 		 	</div>-->
-
-
-		 	<div id="map">
-
-       <!--
-        <div class="tooltip" style="left: 100px; top:100px;">
-          <h2 class="tooltip-year">1984</h2>
-          <h1 class="tooltip-title">Nace Rafa Nadal</h1>
-          <div class="tooltip-inner">
-            <div class="txt">
-              <h3 class="tooltip-place">Manacor</h3>
-              <p>Nació el 3 de junio de 1986 en Manacor, Isla de Mallorca, Baleares, (España). Sus padres son Ana María Parera y Sebastián Nadal, tiene una hermana menor, María Isabel, y es sobrino del exjugador de fútbol del FC Barcelona y del RCD Mallorca Miguel Ángel Nadal</p>
-            </div>
-            <div class="tooltip-media">
-
-            </div>
-          </div>
-        </div>
-
-        <div class="tooltip tlt-01" style="left: 500px; top:100px;">
-          <h2 class="tooltip-year">2003</h2>
-          <h1 class="tooltip-title">Debuta en Wimbledon</h1>
-          <div class="tooltip-inner">
-            <div class="txt">
-              <h3 class="tooltip-place">Wimbledon</h3>
-              <p>2003 supone el debut de Nadal en sus dos primeros torneos del Grand Slam. En su primera participación en Wimbledon vence en primera ronda al croata Mario Ančić por 6-3, 6-4, 4-6 y 6-4,40 y en segunda ronda al británico Lee Childs por 6-2, 6-4 y 6-3,41 pero cae en la tercera ronda contra el tailandés Paradorn Srichaphan por 4-6, 4-6 y 2-6</p>
-            </div>
-            <div class="tooltip-media">
-                <iframe width="365" height="274" src="//www.youtube.com/embed/QX30JIMNITk" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>-->
-
+      <div id="map"></div>
+      <div class="map-info">
+        <h2 id="title"></h2>
+        <p id="description"></p>
+        <p id="next">next</p>
+        <p id="prev">prev</p>
       </div>
 
-      <div id="time" class="timeline">
-        <span id="timebar" class="time-inner">
-        </span>
-      </div>
 
-</section>
+      <iframe id="media" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-<script src="js/nadal.js"></script>
-<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
-<script src="js/odyssey.js"></script>
-<script>
-      var story = Odyssey.Story();
-      var sublayer;
+    </section>
 
-      function openInfowindow(layer, latlng, cartodb_id, template) {
-        //console.log(template);
-       // debugger;
-        //layer.getSubLayer(2).infowindow.set('template', $('#event').html());
-        layer.trigger('featureClick', null, latlng, null, { cartodb_id: cartodb_id }, 2);
-      }
+    <script src="js/nadal.js"></script>
 
-      function main() {
+    <script>
+  /* map */
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
+    center: [3.1975198, 39.5699649],
+    zoom: 10,
+    dragRotate: false
+  });
+  
 
-        var O = Odyssey; 
-
-        seq = O.Triggers.Sequential();
-
-        var sql = cartodb.SQL ({user:'piensaenpixel'});
-
-        O.Triggers.Keys().left().then(seq.prev, seq)
-        O.Triggers.Keys().right().then(seq.next, seq)
-        
-
-        cartodb.createVis('map', 'http://piensaenpixel.cartodb.com/api/v2/viz/aaa4904e-fba5-11e3-acfe-0edbca4b5057/viz.json', {
-            shareable: false,
-            title: false,
-            description: false,
-            search: false,
-            tiles_loader: false
-        })
-        .done(function(vis, layers) {
-          
-            var progressByID = {};
-            var templateByID = {};
-            map = vis.getNativeMap();
-
-            map.options.maxZoom = 6;
-            
-            // sublayer 3 contains the markers
-            sublayer = layers[1].getSubLayer(2);
-            var layer = layers[1];
-            layer.infowindow.bind('change:content');
-
-
-            sublayer.on('featureClick', function (e, latlong, pos, data, template){
-              var dataClick = data.cartodb_id;
-            })
-            layer.infowindow.bind('change:content', function() {
-              var data = layer.infowindow.get('content').data;
-              if(data && data.infowindow !== undefined) {
-                layer.infowindow.set('template', $('#'+data.infowindow).html());
-              }
-            })
-           // sublayer.setInteraction(false);
-
-            sql.execute ( 'SELECT *, st_y(the_geom) as lat, st_x(the_geom) as lon FROM "nadal" ORDER BY cartodb_id').done(function (data) {
-
-              // Odyssey actions
-              function openInfoWindowAction(lat,lon,cartodbid, template) {
-                return O.Action (function(){  
-                  var self = this;
-                  openInfowindow(layers[1], [+lat, +lon], cartodbid, template);
-                  layers[1].infowindow.bind('domready', function ready() {
-                    layers[1].infowindow.unbind('domready', ready);
-                    self.finish();
-                  });
-                  return true;
-                })
-      
-              }
-
-              function closeInfoWindowAction() {
-                return O.Action (function(){  
-                  layers[1].infowindow.set('visibility',false);
-                })
-              } 
-
-              function progressBar(step) {
-                var value = step*100;
-                return O.Action (function(){
-                  document.querySelector('#timebar').style.width = value+'%';
-                })
-              }
-
-
-              for (i  =0; i < data.rows.length; ++i) {
-                  var row = data.rows[i];
-                  var layer = layers[1];
-                  progressByID[row.cartodb_id] = (i+1)/data.rows.length;
-                  templateByID[row.cartodb_id] = row.infowindow;
-                  story.addState(
-                    seq.step(i),
-                    O.Chain(
-                        progressBar((i+1)/data.rows.length),
-                        map.actions.setView(L.latLng(row.lat, row.lon), 14),
-                        openInfoWindowAction(row.lat, row.lon, row.cartodb_id, row.infowindow)
-                    )
-                )
-              }
-            })
-
-        })
-        .error(function(err) {
-          console.log(err);
-        });
-
-      }
-
-      window.onload = main();
-
-      window.addEventListener("load", function(){
-
-          story.go(0);       
-
-          document.querySelector('#prev').addEventListener("click", function(e){
-             seq.prev()
-          });
-
-          document.querySelector('#next').addEventListener("click", function(e){
-             seq.next()
-          });
-
+      carto.setDefaultAuth({
+        user: 'piensaenpixel',
+        apiKey: 'default_public'
       });
-    </script>
+      const s = carto.expressions;
+      const source = new carto.source.Dataset('nadal');
+      const viz = new carto.Viz(`
+        width: 6
+        color: #ff5500
+        resolution: 0.1
+      `);
+
+      const layer = new carto.Layer('layer', source, viz);
+
+      layer.addTo(map, 'watername_ocean');
+
+
+
+  /* vars */
+  var position = 1;
+  var data;
+  var elNext = document.getElementById("next");
+  var elPrev = document.getElementById("prev");
+
+  /* read json */
+  var request = new XMLHttpRequest();
+  request.open('GET', 'nadal.json', true);
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      // Success!
+      data = JSON.parse(request.responseText);
+      init();
+    } else {
+      // We reached our target server, but it returned an error
+    }
+  };
+  request.onerror = function() {
+    // There was a connection error of some sort
+  };
+
+  request.send();
+
+  /* Functions change content */
+  function updateContent(value) {
+      document.getElementById("title").innerHTML = data[value].FIELD3;
+      document.getElementById("description").innerHTML = data[value].FIELD4;
+      document.getElementById("media").src = data[value].FIELD8;
+
+      var coordinates = data[value].FIELD1.split(", ");
+      map.flyTo({
+            center: [coordinates[0], coordinates[1]]
+      });
+
+      console.log(coordinates);
+      console.log(data[value].FIELD1);
+  }
+
+  function next(){
+    if (position < data.length) {
+      position = position +1;
+      updateContent(position);
+    }
+  }
+
+  function prev(){
+    if (position > 1) {
+      position = position - 1;
+      updateContent(position);
+    }
+  }
+
+  function init(){
+      elNext.addEventListener("click", function(){
+        next()
+      }, false); 
+      elPrev.addEventListener("click", function(){
+        prev();
+      }, false); 
+  }
+
+  function checkKey(e) {
+      e = e || window.event;
+      if (e.keyCode == '37') {
+        prev();
+      }
+      else if (e.keyCode == '39') {
+        next();
+      }
+  }
+
+
+  /* Change content */
+
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+      updateContent(position)
+    }, 500);
+  });
+
+  document.onkeydown = checkKey;
+
+
+
+
+</script>
+
 
   </body>
 

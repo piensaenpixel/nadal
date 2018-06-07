@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 @font-face {
     font-family: 'Gotham-Ultra';
     src: url("../fonts/Gotham-Ultra.eot?#iefix") format("embedded-opentype"),
@@ -171,11 +174,11 @@
   z-index: 2;
   bottom: 40px;
   border-radius: 2px;
+  flex-direction: column;
 }
 .map-infoText {
 	padding: 16px;
-	width: 300px;
-	max-height: 300px;
+	width: 462px;
 }
 .scroll {
 	position: relative;

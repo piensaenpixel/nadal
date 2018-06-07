@@ -5,6 +5,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Nadal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Include CARTO VL JS -->
     <script src="js/carto-vl.js"></script>
     <!-- Include Mapbox GL JS -->
@@ -37,7 +38,7 @@
 
 
 
-	 		<div class="timeline">
+	 		<div class="timeline" id="infoTimeline">
 	 			<span id="bar">
 
              <div class="map-info">
@@ -219,6 +220,54 @@
   var ps = new PerfectScrollbar('.scroll');
 
 
+
+
+  /* Swipe */
+  let pageWidth = window.innerWidth || document.body.clientWidth;
+  let treshold = Math.max(1,Math.floor(0.01 * (pageWidth)));
+  let touchstartX = 0;
+  let touchstartY = 0;
+  let touchendX = 0;
+  let touchendY = 0;
+
+  const limit = Math.tan(45 * 1.5 / 180 * Math.PI);
+  const gestureZone = document.getElementById('infoTimeline');
+
+  gestureZone.addEventListener('touchstart', function(event) {
+      touchstartX = event.changedTouches[0].screenX;
+      touchstartY = event.changedTouches[0].screenY;
+  }, false);
+
+  gestureZone.addEventListener('touchend', function(event) {
+      touchendX = event.changedTouches[0].screenX;
+      touchendY = event.changedTouches[0].screenY;
+      handleGesture(event);
+  }, false);
+
+  function handleGesture(e) {
+      let x = touchendX - touchstartX;
+      let y = touchendY - touchstartY;
+      let xy = Math.abs(x / y);
+      let yx = Math.abs(y / x);
+      if (Math.abs(x) > treshold || Math.abs(y) > treshold) {
+          if (yx <= limit) {
+              if (x < 0) {
+                  next();
+              } else {
+                  prev();
+              }
+          }
+          if (xy <= limit) {
+              if (y < 0) {
+                  console.log("top");
+              } else {
+                  console.log("bottom");
+              }
+          }
+      } else {
+          console.log("tap");
+      }
+  }
 
 </script>
 

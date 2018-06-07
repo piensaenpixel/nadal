@@ -190,3 +190,41 @@
 #media.empty {
 	display: none;
 }
+
+
+@media (max-width: 600px) {
+	#home {
+		height: 100vh !important;
+	}
+	.home-inner {
+		width: 80%;
+	}
+	.home-title {
+		font-size: 60px;
+	}
+	.home-inner p {
+    font-size: 16px;
+    line-height: 24px;
+	}
+	.home-subtitle img {
+		width: 80px;
+	}
+	#map_inner {
+		display: flex;
+		flex-direction: column;
+	}
+	.timeline, #map {
+		position: relative;
+		flex: 1;
+	}
+	.map-infoText {
+		width: 100%;
+	}
+	.map-info {
+		transform: translateX(0);
+		position: static;
+	}
+	#bar {
+		width: 100% !important;
+	}
+}

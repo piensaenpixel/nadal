@@ -169,7 +169,8 @@
 	background: #fff;
 	padding: 20px;
 	position: absolute;
-	right: 0%;
+	left: 100%;
+	transform: translateX(-200px);
   padding: 0;
   z-index: 2;
   bottom: 40px;

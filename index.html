@@ -14,56 +14,63 @@
 
 		<link href="css/reset.css" type="text/css" rel="stylesheet" />
     <link href="css/app.css" type="text/css" rel="stylesheet" />
-
-    <style type="text/css">
-        #map {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-        }
-        .map-info {
-          background: rgba(255, 255, 255, .8);
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          padding: 20px;
-          z-index: 2;
-          color: #000;
-        }
-    </style>
+    <link href="css/perfect-scrollbar.css" rel="stylesheet">
+    <script src="js/perfect-scrollbar.min.js"></script>
 
 	</head>
 
 	<body>
-		 <section id="home" class="h-valign h-txt-center">
-		 	<div class="h-iblock home-inner h-malign">
-		 		<h2 class="h-tupper home-subtitle"><span class="h-pr h-iblock">About</span></h2>
-		 		<h1 class="h-tupper home-title">Rafa Nadal</h1>
+		 <section id="home">
+		 	<div class="home-inner">
+		 		<h2 class="home-subtitle">
+          <img src="img/logo-nadal.png" alt="About" />
+        </h2>
+		 		<h1 class="home-title">Rafa Nadal</h1>
 		 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
-		 		<p class="button h-tupper" id="continue"><a href="#">Continue</a></p>
+		 		<p class="button" id="continue"><a href="#">Continue</a></p>
 		 	</div>
 
 
 		 </section>
 
 		 <section id="map_inner">
-      <!--
-		 	<div class="inner-timeline">
 
-		 		<div class="timeline h-pr">
-		 			<span class="h-pa"></span>
-		 		</div>
-		 	</div>-->
+
+
+	 		<div class="timeline">
+	 			<span id="bar">
+
+             <div class="map-info">
+                <h3 id="year"></h3>
+                <h2 id="title"></h2>
+                <div class="scroll">
+                  <p id="description"></p>
+                </div>
+<!--                 <ul class="navigation">
+                  <li id="prev">
+                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M13.0014918,8.99984838 L0.93065281,8.99984838 L0.93065281,6.99988628 L13.0014729,6.99988628 L8.63435917,2.63277257 C8.25271742,2.25113081 8.24709663,1.61235705 8.63761352,1.22184016 C9.03085302,0.828600653 9.65982637,0.829866243 10.0485459,1.21858581 L15.7118017,6.88184154 C16.0082814,7.17832129 16.077832,7.62998058 15.911022,7.99987681 C16.077832,8.36977304 16.0082814,8.82143233 15.7118017,9.11791207 L10.0485459,14.7811678 C9.65982637,15.1698874 9.03085302,15.171153 8.63761352,14.7779135 C8.24709663,14.3873966 8.25271742,13.7486228 8.63435917,13.3669811 L13.0014918,8.99984838 Z" id="Combined-Shape-Copy" fill="#fff" transform="translate(8.465194, 7.999877) scale(-1, 1) translate(-8.465194, -7.999877) "></path>
+                        </g>
+                    </svg>
+                  </li>
+                  <li id="next">
+                    <svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M3.0729291,5.99988628 L15.9996968,5.99988628 L15.9996968,7.99984838 L3.42266415,7.99984838 L7.37229321,11.9494774 C7.75393496,12.3311192 7.75955575,12.969893 7.36903886,13.3604099 C6.97579936,13.7536494 6.34682601,13.7523838 5.95810645,13.3636642 L0.294850712,7.70040846 C0.0608748934,7.46643264 -0.0317683584,7.13581028 0.0215565178,6.82499981 C-0.0317683584,6.51418934 0.0608748934,6.18356697 0.294850712,5.94959116 L5.95810645,0.286335419 C6.34682601,-0.102384144 6.97579936,-0.103649734 7.36903886,0.289589768 C7.75955575,0.680106658 7.75393496,1.31888043 7.37229321,1.70052218 L3.0729291,5.99988628 Z" id="path-next"></path>
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <use id="Combined-Shape" fill="#fff" transform="translate(7.999848, 6.825000) scale(-1, 1) translate(-7.999848, -6.825000) " xlink:href="#path-next"></use>
+                        </g>
+                    </svg>
+                  </li>
+                </ul> -->
+              </div>
+
+
+        </span>
+	 		</div>
+      
       <div id="map"></div>
-      <div class="map-info">
-        <h2 id="title"></h2>
-        <p id="description"></p>
-        <p id="next">next</p>
-        <p id="prev">prev</p>
-      </div>
+
 
 
       <iframe id="media" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -91,14 +98,14 @@
       const source = new carto.source.Dataset('nadal');
       const viz = new carto.Viz(`
         width: 6
-        color: #ff5500
-        resolution: 0.1
+        color: ramp($infowindow,Prism)
+        resolution: 0.2
+        strokeWidth: 18;
+        strokeColor: rgba(245, 166, 35, .2)
       `);
 
       const layer = new carto.Layer('layer', source, viz);
-
       layer.addTo(map, 'watername_ocean');
-
 
 
   /* vars */
@@ -106,6 +113,7 @@
   var data;
   var elNext = document.getElementById("next");
   var elPrev = document.getElementById("prev");
+
 
   /* read json */
   var request = new XMLHttpRequest();
@@ -138,6 +146,12 @@
 
       console.log(coordinates);
       console.log(data[value].FIELD1);
+
+      var width =  window.outerWidth;
+      var step = (width / data.length) * (value + 1);
+      console.log(width);
+      console.log(step);
+      document.getElementById("bar").style.width = step + 'px';
   }
 
   function next(){
@@ -184,6 +198,7 @@
 
   document.onkeydown = checkKey;
 
+  var ps = new PerfectScrollbar('.scroll');
 
 
 

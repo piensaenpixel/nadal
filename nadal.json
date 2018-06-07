@@ -60,7 +60,7 @@
    "FIELD10": "Wimbledon"
  },
  {
-   "FIELD1": "0101000020E610000008EAEF002A7652C08D012379F85F4440",
+   "FIELD1": "-73.8463137, 40.7497703",
    "FIELD2": "5",
    "FIELD3": "Debuta en Open USA",
    "FIELD4": "En el Abierto de Estados Unidos gana en la primera ronda a Fernando Vicente por 6-4, 6-3 y 6-3,42 para caer en la segunda ante el marroquí Younes El Aynaoui por 6-7, 3-6 y 6-7.43",
@@ -72,7 +72,7 @@
    "FIELD10": "New York"
  },
  {
-   "FIELD1": "0101000020E61000006560D339F5933040EE7FDB6EDD994840",
+   "FIELD1": "16.5779606, 49.2020701",
    "FIELD2": "6",
    "FIELD3": "Debuta en Copa Davis",
    "FIELD4": " Durante la disputa, a principios de año, de la eliminatoria República Checa-España de Copa Davis, sin Juan Carlos Ferrero ni Carlos Moyá (las dos máximas figuras tenísticas de España de aquel entonces), Rafael Nadal se echó el equipo a sus espaldas y jugó tres partidos en esa eliminatoria, ganando el definitivo quinto punto a Radek Stepanek (7-6, 7-6, 6-4) y dando el pase a la siguiente fase del torneo a España, que ganaba en moqueta indoor jugando de visitante.",
@@ -84,7 +84,7 @@
    "FIELD10": "Brno"
  },
  {
-   "FIELD1": "0101000020E61000002A53CC41501F6240191EFB592CE942C0",
+   "FIELD1": "144.978547, -37.821666",
    "FIELD2": "7",
    "FIELD3": "Debuta Open Australia",
    "FIELD4": "En enero de 2004 debuta en el Abierto de Australia. En la primera ronda vence a Michal Tabara por 6-1, 6-2 y 6-2,44 en la segunda ronda vence a Thierry Ascione por 6-4, 3-6, 7-5 y 6-1,45 y en tercera ronda pierde contra Lleyton Hewitt por 6-7, 6-7 y 2-6.",
@@ -96,7 +96,7 @@
    "FIELD10": "Melbourne"
  },
  {
-   "FIELD1": "0101000020E610000008EAEF002A7652C08D012379F85F4440",
+   "FIELD1": "-73.8463137, 40.7497703",
    "FIELD2": "8",
    "FIELD3": "Llega semifinales Open Usa en Dobles",
    "FIELD4": "En el Abierto de Estados Unidos, Nadal ganó la primera ronda a Ivo Heuberger por 6-0, 6-3, 4-6, 2-6 y 6-3,47 en la segunda ronda perdió contra Andy Roddick por 0-6, 3-6 y 4-6,48 pero en dobles, Nadal hizo pareja con Tommy Robredo y llegaron hasta las semifinales,49 donde perdieron contra la pareja formada por Leander Paes y David Rikl por 6-3 y 6-3,50 hasta el momento ha sido el mejor resultado de Nadal en la modalidad dobles en Grand Slam",
@@ -108,7 +108,7 @@
    "FIELD10": "New York"
  },
  {
-   "FIELD1": "0101000020E6100000441BDBC6FAD117C0CAEF7E260CB04240",
+   "FIELD1": "-5.9550582, 37.3753708",
    "FIELD2": "9",
    "FIELD3": "Gana su primera ensaladera",
    "FIELD4": "Pero para el gran público Nadal se hizo popular en la disputa de la final de la Copa Davis 2004 frente a EE. UU., cuando derrotó sorprendentemente al norteamericano Andy Roddick acercando al equipo español a la que sería su segunda ensaladera",
@@ -120,7 +120,7 @@
    "FIELD10": "Sevilla"
  },
  {
-   "FIELD1": "0101000020E6100000476815472F8C32401B214D0691384B40",
+   "FIELD1": "18.5475964, 54.4419258",
    "FIELD2": "10",
    "FIELD3": "Gana su primer título en la ATP",
    "FIELD4": "Al ganar en Sopot (2004), Rafael -Nadal logró ser el más precoz en levantar un título ATP desde que Lleyton Hewitt ganara en Delray Beach 1999.\n",
@@ -132,7 +132,7 @@
    "FIELD10": "Sopot"
  },
  {
-   "FIELD1": "0101000020E61000009341A49531B41D4025CD1FD3DADE4540",
+   "FIELD1": "7.4259704, 43.741053",
    "FIELD2": "11",
    "FIELD3": "Gana su primer Masters Series",
    "FIELD4": "En Montecarlo se adjudica el primer Masters Series de su carrera al ganar en la final a Guillermo Coria por 6-3, 6-1, 0-6 y 7-5.5",
@@ -144,7 +144,7 @@
    "FIELD10": "Montecarlo"
  },
  {
-   "FIELD1": "0101000020E6100000097316516E12294073C4B5357DF44440",
+   "FIELD1": "12.5359979, 41.9100711",
    "FIELD2": "12",
    "FIELD3": "Gana su primer Masters Series de Roma",
    "FIELD4": "En Roma Nadal vuelve a ganar otro Masters Series al volver a ganar en la final a Guillermo Coria por 6-4, 3-6, 6-3, 4-6 y 7-6, en una final que duró 5 horas y 14 minutos",
@@ -156,7 +156,7 @@
    "FIELD10": "Roma\n"
  },
  {
-   "FIELD1": "0101000020E610000002C3A85AC145024044087E0A366D4840",
+   "FIELD1": "2.2840602, 48.8532117",
    "FIELD2": "13",
    "FIELD3": "Gana su primer Roland Garros",
    "FIELD4": "En mayo, Nadal disputó su primer Roland Garros, en la primera ronda venció a Lars Burgsmüller por 6-1, 7-6 y 6-1,57 en la segunda ronda venció a Xavier Malisse por 6-2, 6-4 y 6-4,58 en la tercera ronda venció al francés Richard Gasquet por 6-4, 6-3 y 6-2,59 en la cuarta ronda venció al francés Sébastien Grosjean por 6-4, 3-6, 6-0 y 6-3,60 en cuartos de final venció a David Ferrer por 7-5,6-2 y 6-0,61 en semifinales derrotó al número uno Roger Federer (6-3, 4-6, 6-4 y 6-3) y alcanzó su primera final de Grand Slam.62 El domingo 5 de junio se convirtió en el cuarto jugador más joven de la historia en ganar ese torneo (a la edad de 19 años y dos días), al vencer al argentino Mariano Puerta en la final, por 6-7, 6-3, 6-1, 7-5. Además se convirtió en el segundo jugador en ganar Roland Garros en su primera participación por detrás de Mats Wilander.",
@@ -168,7 +168,7 @@
    "FIELD10": "Paris"
  },
  {
-   "FIELD1": "0101000020E61000004074F7EFB06F0DC0B9E6E9B70A384440",
+   "FIELD1": "-3.6795367, 40.4378271",
    "FIELD2": "14",
    "FIELD3": "Gana su primer Master Series Indoor",
    "FIELD4": "En el mes de octubre protagonizó una de las finales más épicas del año al derrotar al croata Ivan Ljubicic en la final del Tenis Masters Series de Madrid,69 Nadal remontó dos sets en contra para ganar su primer TMS en indoor.",
@@ -180,7 +180,7 @@
    "FIELD10": "Madrid"
  },
  {
-   "FIELD1": "0101000020E6100000BD186FD003C4CCBFE0EBB5EA84B54940",
+   "FIELD1": "-0.2247319, 51.4181188",
    "FIELD2": "15",
    "FIELD3": "Tenista con más victorias en 2005",
    "FIELD4": "Se convirtió en el tenista del circuito profesional ATP con más títulos ganados, junto al número 1 Roger Federer, ganando un total de 11 torneos a lo largo de 2005 (Costa Do Sauípe, Acapulco, Barcelona, TMS Montecarlo, TMS Roma, Roland Garros, Bastad, Stuttgart, TMS Montreal, Abierto de China y TMS Madrid).\n",
@@ -192,7 +192,7 @@
    "FIELD10": "manacor"
  },
  {
-   "FIELD1": "0101000020E61000008A8E8939AD300140D8648D7A88B24440",
+   "FIELD1": "2.1487679, 41.39479",
    "FIELD2": "16",
    "FIELD3": "Gana Premio Laureus",
    "FIELD4": "Recibe el prestigioso premio Laureus a la mejor promesa mundial del año",
@@ -204,7 +204,7 @@
    "FIELD10": "Barcelona"
  },
  {
-   "FIELD1": "0101000020E610000002C3A85AC145024044087E0A366D4840",
+   "FIELD1": "2.2840602, 48.8532117",
    "FIELD2": "17",
    "FIELD3": "Bate el record de victorias seguidas en tierra batida",
    "FIELD4": "El 29 de mayo de 2006 Nadal batió el récord de victorias consecutivas en tierra batida que hasta ese momento ostentaba Guillermo Vilas con 53 victorias quién le entregó un obsequio conmemorativo.73 La marca finalizaría al año siguiente en los 81 encuentros.",
@@ -216,7 +216,7 @@
    "FIELD10": "Paris"
  },
  {
-   "FIELD1": "0101000020E610000002C3A85AC145024044087E0A366D4840",
+   "FIELD1": "2.2840602, 48.8532117",
    "FIELD2": "18",
    "FIELD3": "Gana su segundo Roland Garros",
    "FIELD4": "El 11 de junio de 2006 conquistó su segundo título del Grand Slam, imponiéndose al tenista suizo Roger Federer, número 1 del mundo, en la final del torneo francés de Roland Garros por 1-6, 6-1, 6-4 y 7-6.74 Durante las dos semanas de competición se deshizo de Robin Söderling en la primera ronda por 6-2, 7-5 y 6-1,75 de Kevin Kim en la segunda ronda por 6-2, 6-1 y 6-4,76 en cuatro mangas a Paul-Henri Mathieu en la tercera ronda por 5-7, 6-4, 6-4 y 6-4,77 y también en cuatro mangas a Lleyton Hewitt en la cuarta ronda por 6-2, 5-7, 6-4 y 6-2,78 en cuartos al serbio Novak Đoković por 6-4, 6-4 y retirada de Djokovic,79 y en semifinales en tres sets al croata Ivan Ljubicic por 6-4, 6-2 y 7-6.80 Por segundo año consecutivo dominaba la temporada de tierra batida con autoridad.",
@@ -228,7 +228,7 @@
    "FIELD10": "Paris"
  },
  {
-   "FIELD1": "0101000020E6100000BD186FD003C4CCBFE0EBB5EA84B54940",
+   "FIELD1": "-0.2247319, 51.4181188",
    "FIELD2": "19",
    "FIELD3": "Alcanza su primera final en Wimbledon",
    "FIELD4": " En primera ronda derrotó a Alex Bogdanovic por 6-4, 7-6 y 6-4,81 en la segunda ronda derrotó a Robert Kendrick por 6-7, 6-3, 7-6, 7-5 y 6-4,82 en la tercera ronda derrotó al ex número 1 Andre Agassi, por 7-6, 6-2 y 6-4,83 en la cuarta ronda venció a Irakli Labadze por 6-3, 7-6, 6-3,84 en cuartos de final ganó a Jarkko Nieminen por 6-3, 6-4 y 6-485 y en semifinales venció a Marcos Baghdatis por 6-1, 7-5 y 6-3, convirtiéndose en el primer español en 40 años en alcanzar una final de Wimbledon ya que desde que Manuel Santana ganara el título en 1966 ningún otro español había llegado a la ronda final;86 el 9 de julio de 2006, se volvía a enfrentar contra todo pronóstico al tenista suizo en la final del torneo londinense de Wimbledon, aunque en esta ocasión la victoria fue para el número 1 del mundo por 0-6, 6-7, 7-6 y 3-6",
@@ -240,7 +240,7 @@
    "FIELD10": "Wimbledon"
  },
  {
-   "FIELD1": "0101000020E6100000B1112D1E835E5E40C164F4ED6E393F40",
+   "FIELD1": "121.4767528, 31.2243489",
    "FIELD2": "20",
    "FIELD3": "Juega su primer master Tennis Masters Cup",
    "FIELD4": "Disputa su primera Tennis Masters Cup, clasifiandose para semifinales tras derrotar a Nikolái Davydenko y Tommy Robredo y caer ante James Blake; en estas no pudo con el suizo Roger Federer y cedería por 4-6 y 5-7.\n",
@@ -252,7 +252,7 @@
    "FIELD10": "Shangai"
  },
  {
-   "FIELD1": "0101000020E61000009341A49531B41D4025CD1FD3DADE4540",
+   "FIELD1": "7.4259704, 43.741053",
    "FIELD2": "21",
    "FIELD3": "Gana su tercer Masters de Montecarlo consecutivo",
    "FIELD4": "Se impone por tercera edición consecutiva. Primero derrotaría en la 2ª ronda a Juan Ignacio Chela por 6-3, 6-1; posteriormente a Kristof Vliegen por un doble 6-1 y ya en cuartos de final derrotaría al alemán Philipp Kohlschreiber por 6-2 y 6-3, en semifinales se encontraría con el checo Tomáš Berdych y se impondría 6-0 y 7-5 y ya en la final derrotaría al n.º 1 del mundo Roger Federer por un doble 6-4.",
@@ -264,7 +264,7 @@
    "FIELD10": "Montecarlo"
  },
  {
-   "FIELD1": "0101000020E61000008A8E8939AD300140D8648D7A88B24440",
+   "FIELD1": "2.1487679, 41.39479",
    "FIELD2": "22",
    "FIELD3": "Nº1 en la ATP",
    "FIELD4": "Revalida su corona en la 55º edición del Trofeo Conde de Godó de Barcelona por tercer año consecutivo ante Guillermo Cañas por 6-3 y 6-4, colocándose en ese momento el n.º 1 en la Carrera de Campeones 2007.\n",
@@ -276,7 +276,7 @@
    "FIELD10": "Barcelona"
  },
  {
-   "FIELD1": "0101000020E610000002C3A85AC145024044087E0A366D4840",
+   "FIELD1": "2.2840602, 48.8532117",
    "FIELD2": "23",
    "FIELD3": "Gana su tercer Roland Garros consecutivo",
    "FIELD4": "En la primera ronda se deshacía de Juan Martín del Potro por 7-5, 6-3 y 6-2,98 en la segunda ronda gana a Flavio Cipolla por 6-2, 6-1 y 6-4,99 en la tercera ronda vence a Albert Montañés por 6-1, 6-3 y 6-2,100 en la cuarta ganó a Lleyton Hewitt por 6-3, 6-1 y 7-6,101 en cuartos de final derrotó al ex-número 1 y ganador en París Carlos Moyá por 6-4, 6-3 y 6-0,102 para ya en semifinales verse las caras con el jugador revelación de la temporada, el serbio Novak Đoković al que se impuso por 7-5, 6-4 y 6-2,103 ya en la final batía al suizo Roger Federer por 6-3, 4-6, 6-3 y 6-4 tras tres horas de juego, coronándose campeón por tercera vez consecutiva y dejando de nuevo al suizo con la miel en los labios sobre la tierra parisina",
@@ -288,7 +288,7 @@
    "FIELD10": "Paris"
  },
  {
-   "FIELD1": "0101000020E6100000BD186FD003C4CCBFE0EBB5EA84B54940",
+   "FIELD1": "-0.2247319, 51.4181188",
    "FIELD2": "24",
    "FIELD3": "Finalista en Wimbledon por segunda vez consecutiva",
    "FIELD4": "En la primera ronda derrotó a Mardy Fish por 6-3, 7-6 y 6-3,105 en la segunda a Werner Eschauer por 6-2, 6-4 y 6-1 en un partido que tuvo que ser suspendido por la lluvia, después de que Nadal desperdiciara una bola de partido ,106 en la tercera venció al Robin Söderling en un partido muy disputado y tras múltiples interrupciones por la lluvia con una marcador de 6-4, 6-4, 6-7, 4-6 y 7-5,107 en la cuarta ronda venció a Mijaíl Yuzhny por 4-6, 3-6, 6-1, 6-2 y 6-2,108 en los cuartos de final se deshizo del checo Tomáš Berdych por 7-6, 6-4 y 6-2,109 y en semifinales derrotó una vez más a Novak Đoković por 3-6, 6-1, 4-1 y retirada del serbio.110 En la final fue derrotado como en la edición previa en el quinto set por el suizo Roger Federer que se coronaría pentacampeón tras vencer por 7-6, 4-6 7-6, 2-6 y 6-2.",
@@ -300,7 +300,7 @@
    "FIELD10": "Wimbledon"
  },
  {
-   "FIELD1": "0101000020E61000009341A49531B41D4025CD1FD3DADE4540",
+   "FIELD1": "7.4259704, 43.741053",
    "FIELD2": "25",
    "FIELD3": "Gana su cuarto Masters de Montecarlo",
    "FIELD4": "En el inicio de la temporada en tierra batida, Nadal logra revalidar su título en el Masters de Montecarlo al derrotar a Roger Federer por 7-5, 7-5, convirtiéndose en el primer tenista en la era Open en triunfar cuatro veces en Mónaco.",
@@ -312,7 +312,7 @@
    "FIELD10": "Montecarlo"
  },
  {
-   "FIELD1": "0101000020E61000008A8E8939AD300140D8648D7A88B24440",
+   "FIELD1": "2.1487679, 41.39479",
    "FIELD2": "26",
    "FIELD3": "Gana su cuarto Conde de Godó",
    "FIELD4": "En Barcelona ganó por cuarta vez consecutiva el Trofeo Conde de Godó, siendo además el tenista que más veces lo ha ganado.",
@@ -324,7 +324,7 @@
    "FIELD10": "Barcelona"
  },
  {
-   "FIELD1": "0101000020E610000002C3A85AC145024044087E0A366D4840",
+   "FIELD1": "2.2840602, 48.8532117",
    "FIELD2": "27",
    "FIELD3": "4º Roland Garros consecutivos.",
    "FIELD4": "En Roland Garros se enfrentó en la primera ronda a Thomaz Bellucci al que derrotó por 7-5, 6-3 y 6-1,127 en la segunda ronda batió a Nicolas Devilder por 6-4, 6-0 y 6-1,128 en tercera a Jarkko Nieminen por 6-1, 6-3 y 6-1,129 en la cuarta ronda gana a Fernando Verdasco por 6-1, 6-0 y 6-2,130 en cuartos de final gana a Nicolás Almagro por un tripe 6-1131 y llegaba a semifinales dónde venció en uno de sus grandes partidos a Novak Đoković por 6-4, 6-2 y 7-6;132 Rafael Nadal se alzó con el título sin conceder ni un sólo set en todo el torneo al ganar al suizo Roger Federer por un contundente 6-1, 6-3 y 6-0. Este resultado se convirtió en el segundo más claro en una final en la historia del torneo parisino, sólo superado por el que en 1977 le endosó Guillermo Vilas a Brian Gottfried (6-0, 6-3 y 6-0). Además, con esta victoria Nadal igualó el histórico récord de Björn Borg único jugador que hasta ese momento había conseguido ganar 4 Roland Garros consecutivos.\n",
@@ -336,7 +336,7 @@
    "FIELD10": "Paris"
  },
  {
-   "FIELD1": "0101000020E6100000BD186FD003C4CCBFE0EBB5EA84B54940",
+   "FIELD1": "-0.2247319, 51.4181188",
    "FIELD2": "28",
    "FIELD3": "Gana Wimbledon por primera vez",
    "FIELD4": "En Wimbledon 2008 comenzó ganando en primera ronda a Andreas Beck por 6-4, 6-4 y 7-6.135 En segunda ronda se midió contra Ernests Gulbis a quien derrotó con parciales de 5-7, 6-2, 7-6 y 6-3,136 en tercera ronda se vio a un mejor Nadal contra el alemán Nicolas Kiefer a quien derrotó por 7-6, 6-2 y 6-3,137 en octavos de final siguió demostrando un gran nivel, esta vez la víctima fue el ruso Mijaíl Yuzhny quien cayó por 6-3, 6-3 y 6-1.138 En cuartos de final se encontró con el británico Andy Murray superándolo por un marcador de 6-3, 6-2, 6-4,139 ya en semifinales, Nadal se enfrentaría a la sorpresa del torneo, el alemán Rainer Schuettler quien, con puesto 94º en la ATP, logró colarse hasta la semifinal. Nadal superó a Shuettler por 6-1, 7-6 y 6-4 clasificándose para su tercera final londinense consecutiva.140\n\nEn la gran final, se volvió a enfrentar con Roger Federer por tercera vez consecutiva; el comienzo del partido fue demorado por lluvia. Nadal comenzó muy bien el encuentro llevándose los primeros dos parciales por un idéntico 6-4. Ya en la tercera manga, Nadal tuvo oportunidad de romper el servicio del suizo en el séptimo juego cuando estuvo en ventaja por 0-40, pero Federer logró recuperarse y no hubo más errores en toda la tercera manga. El partido fue suspendido por la lluvia cuando Federer lideraba el tercer set por 5-4, una vez reanudado, tuvieron que decidirlo en un tie-break que se llevó Federer por 7-5. En el cuarto tampoco hubo roturas del servicio de ninguno de los dos jugadores, y llegaron a otro tie-break, donde Nadal contó con los primeros dos puntos para proclamarse campeón, pero Federer se supo reponer y se llevó el set por 7-6(8). El quinto set fue un recital de buen tenis, pero otra vez la lluvia se presentó y se volvió a suspender el partido cuando el marcador estaba empatado 2-2, sacando Federer y 40 a 40 en el quinto juego. El partido se extendió hasta límites insospechados, pero finalmente Nadal se llevó el quinto set por 9-7, con el marcador final de 6-4, 6-4, 6-7(5), 6-7(8) y 9-7, siendo ésta la final más larga en la historia de Wimbledon (4 horas, 48 minutos) y considerada por la famosa publicación deportiva, Sports Illustrated, como el mejor partido de la historia del tenis.141\n",
@@ -348,7 +348,7 @@
    "FIELD10": "Wimbledon"
  },
  {
-   "FIELD1": "0101000020E6100000444074F76F195D4042DF27582DF84340",
+   "FIELD1": "116.3974589, 39.9388838",
    "FIELD2": "29",
    "FIELD3": "Medalla oro JJOO Pekin",
    "FIELD4": "Disputa los Juegos Olímpicos de Pekín 2008. Derrotando, en primera ronda al italiano Potito Starace por 2-1 (6-2, 3-6 y 6-2), en segunda ronda al australiano Lleyton Hewitt por 2-0 (6-1 y 6-2), en octavos de final al ruso Ígor Andréiev por 2-0 (6-4 y 6-2), y en cuartos de final, con cierta facilidad, al austríaco Jürgen Melzer por 2-0 (6-0 y 6-4). En semifinales se enfrentó al serbio Novak Djokovic, número 3 del mundo en ese momento. Rafa empezó rompiendo con cierta facilidad el saque del jugador serbio en el primer set, que acabó ganando por 6-4. Durante el segundo set, Djokovic no renunció al partido, pues se repuso de sus fallos en el primero y dominó por completo esta segunda manga, ganando el set por un contundente 6-1 y todo quedaba para el tercer y definitivo set, que se antojaba dramático por la fuerza, posición, energía y calidad de los contrincantes, pues habría que ganar por diferencia de dos juegos. Rafa pudo romper el servicio del jugador serbio en varias ocasiones, pero éste siempre acababa reponiéndose y manteniéndolo, al igual que ocurría con Rafa, ya que el serbio también disfrutó de ocasiones para romper el servicio del tenista español sin fortuna. El primer break fue el que decidió el partido, pues con 4-5 en el marcador, y al saque Novak Djokovic, el partido se puso de cara para Nadal, con un parcial de 40-Ventaja, en el que el serbio, tras una falta de saque, en el segundo intento, sacó correctamente, Rafa le devolvió la bola con un revés perfecto, éste se acercaba a la red y cuando todo apuntaba a que el serbio se haría con el punto que pondría el deuce en el juego, ejecutó erróneamente un remate que fue a botar al pasillo y el partido fue para Nadal, con un resultado final de 2-1 (6-4, 1-6 y 6-4). En la final le esperaba el chileno Fernando González, al que venció por 3-0 (6-3, 7-6 y 6-3), consiguiendo así el primer Oro Olímpico en la modalidad de tenis masculino en la historia del tenis español. Al día siguiente (18 de agosto de 2008), se convirtió en el n.º 1 del mundo tras superar al suizo Roger Federer (237 semanas como n.º 1) en más de 700 puntos (ganó 400 en los JJ. OO.) en el ranking de la ATP. ",
@@ -360,7 +360,7 @@
    "FIELD10": "Pekin"
  },
  {
-   "FIELD1": "0101000020E610000032FBE18C066517C0DF26ED574BAF4540",
+   "FIELD1": "-5.8486578, 43.3694868",
    "FIELD2": "30",
    "FIELD3": "Premio príncipe de Asturias de los Deportes",
    "FIELD4": "El día 3 de septiembre le fue otorgado en Premio Príncipe de Asturias de los Deportes.143 En la final venció a otras candidaturas como la de la Selección Española de Fútbol, Yelena Isinbáyeva, Michael Phelps (ganador de ocho medallas de oro en Pekín 2008) o Usain Bolt (récord en los 100 m, 200 m y 4x100 con Jamaica) tras un fallo del jurado polémico y discutido por la edad de un tenista que puede ampliar su palmarés y por los méritos que hicieron ese año los deportistas citados anteriormente y Roger Federer que le supera en palmarés y récords logrados.\n",
@@ -372,7 +372,7 @@
    "FIELD10": "Oviedo"
  },
  {
-   "FIELD1": "0101000020E61000002A53CC41501F6240191EFB592CE942C0",
+   "FIELD1": "144.978547, -37.821666",
    "FIELD2": "31",
    "FIELD3": "Gana el Open de Australia",
    "FIELD4": "En enero debuta en el Abierto de Australia con una victoria frente al belga Christophe Rochus por 6-0, 6-2 y 6-2,153 en la segunda ronda gana a Roko Karanušić por 6-2, 6-3 y 6-2,154 en la tercera gana a Tommy Haas por 6-4, 6-2 y 6-2,155 en la cuarta ronda gana a Fernando González por 6-3, 6-2 y 6-4,156 y en cuartos de final gana a Gilles Simon por 6-2, 7-5 y 7-5,157 era la primera vez que Nadal ganaba a un Top 10 en un Grand Slam sobre superficie dura. Alcanza las semifinales del torneo sin perder ningún set y, tras vencer a su compatriota Fernando Verdasco en el partido más largo de la historia del torneo australiano (5 horas 14 minutos)158 por 6-7, 6-4, 7-6, 6-7 y 6-4, se clasifica para jugar la final frente al suizo Roger Federer. Tras vencer en ella por 7-5, 3-6, 7-6, 3-6 y 6-2 se convierte en el primer español en vencer en una final individual del Abierto de Australia y logra su 6º trofeo de Grand Slam,159 siendo además el cuarto jugador en lograr Grand Slams en tres superficies diferentes tras Andre Agassi, Mats Wilander y Jimmy Connors.",
@@ -384,7 +384,7 @@
    "FIELD10": "Melbourne"
  },
  {
-   "FIELD1": "0101000020E61000009341A49531B41D4025CD1FD3DADE4540",
+   "FIELD1": "7.4259704, 43.741053",
    "FIELD2": "32",
    "FIELD3": "Gana su 5º Masters de Montecarlo",
    "FIELD4": "El 19 de abril del 2009 ganaba por quinta vez consecutiva el Masters de Montecarlo; tras deshacerse suvesivamente de Juan Ignacio Chela, Nicolás Lapentti e Ivan Ljubicic, en semifinales venció al número cuatro del mundo, el británico Andy Murray, mientras que en la final superó al número tres, el serbio Novak Djokovic, en tres mangas por 6-3, 2-6 y 6-1. El set perdido en la final era el primero que cedía en este torneo desde la final del 2006. Gracias a esta victoria en Montecarlo, Nadal consigue su decimocuarto M1000 y con tan solo 22 años iguala el registro de Roger Federer.\n",
@@ -396,7 +396,7 @@
    "FIELD10": "Montecarlo"
  },
  {
-   "FIELD1": "0101000020E61000008A8E8939AD300140D8648D7A88B24440",
+   "FIELD1": "2.1487679, 41.39479",
    "FIELD2": "33",
    "FIELD3": "Gana la Copa Davis con España",
    "FIELD4": "En la final de la Copa Davis jugó el primer y el cuarto punto, ante Tomáš Berdych y Jan Hajek ganando en los dos encuentros por 7-5, 6-0 y 6-2 y 6-4, 6-3 respectivamente, encarrilando la cuarta ensaladera para el equipo español, segunda consecutiva. David Ferrer y la pareja española compuesta por Fernando Verdasco y Feliciano López consiguieron los otros tres puntos.\n",
@@ -408,7 +408,7 @@
    "FIELD10": "Barcelona"
  },
  {
-   "FIELD1": "0101000020E61000009341A49531B41D4025CD1FD3DADE4540",
+   "FIELD1": "7.4259704, 43.741053",
    "FIELD2": "34",
    "FIELD3": "Gana su 6º Masters de Montecarlo",
    "FIELD4": "destrozar en Montecarlo a Fernando Verdasco",
@@ -420,7 +420,7 @@
    "FIELD10": "Montecarlo"
  },
  {
-   "FIELD1": "0101000020E610000002C3A85AC145024044087E0A366D4840",
+   "FIELD1": "2.2840602, 48.8532117",
    "FIELD2": "35",
    "FIELD3": "Gana su 5º Roland Garros",
    "FIELD4": "Empezó Roland Garros ganando en la 1ª ronda al francés Gianni Mina por 6-2, 6-2 y 6-2,180 en la 2ª ronda ganó al argentino Horacio Zeballos por 6-2, 6-2 y 6-3,181 en la 3ª ronda ganó al australiano Lleyton Hewitt por 6-3, 6-4 y 6-3,182 en la 4ª ronda ganó al brasileño Thomaz Bellucci por 6-2, 7-5 y 6-4. Ya en cuartos de final se impuso a Nicolás Almagro por 7-6, 7-6 y 6-4 y en semifinales ganó a Jürgen Melzer por 6-2, 6-3 y 7-6. El 6 de junio conseguiría su quinto Roland Garros, tras derrotar al sueco Robin Soderling por 6-4, 6-2 y 6-4, vengando así su derrota del año anterior en octavos de fina",
@@ -432,7 +432,7 @@
    "FIELD10": "Paris"
  },
  {
-   "FIELD1": "0101000020E6100000BD186FD003C4CCBFE0EBB5EA84B54940",
+   "FIELD1": "-0.2247319, 51.4181188",
    "FIELD2": "36",
    "FIELD3": "Gana su 2º Wimbledon",
    "FIELD4": "En Wimbledon ganó en la 1ª ronda al japonés Kei Nishikori por 6-2, 6-4 y 6-4, en segunda ronda ganó al holandés Robin Haase por 5-7, 6-2, 3-6, 6-0 y 6-3, en 3ª ronda volvió a ganar en 5 sets al alemán Philipp Petzschner por 6-4, 4-6, 6-7(5), 6-2 y 6-3, en la cuarta ronda ganó al francés Paul-Henri Mathieu por 6-4, 6-2 y 6-2. En cuartos de final, Nadal volvió a ganar al sueco Robin Söderling por 3-6, 6-3, 7-6(4) y 6-1. En semifinales se enfrentaba al escocés Andy Murray, era la segunda vez consecutiva que Andy Murray llegaba a las semifinales de Wimbledon, en el 2009 perdió contra Andy Roddick, la última vez que un tenista del Reino Unido llegó a la final de Wimbledon fue hace 72 años, en 1938, pero Nadal ganó el partido por 6-4, 7-6(4) y 6-4. Ganó su segundo Wimbledon, derrotando en la final al checo Tomas Berdych por un claro 6-3, 7-5 y 6-4 en dos horas y doce minutos.",

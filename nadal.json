@@ -31,7 +31,7 @@
    "FIELD5": "2014-06-22 21:58:12.851252+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.abc.es/Media/201306/27/rafanadal--644x362.jpg",
+   "FIELD8": "",
    "FIELD9": "1997",
    "FIELD10": "Segovia\n"
  },
@@ -55,7 +55,7 @@
    "FIELD5": "2014-06-22 22:06:03.59978+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=QX30JIMNITk",
+   "FIELD8": "https://www.youtube.com/embed/QX30JIMNITk",
    "FIELD9": "2003\n",
    "FIELD10": "Wimbledon"
  },
@@ -79,7 +79,7 @@
    "FIELD5": "2014-06-23 19:11:20.485132+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.puntodebreak.com/files/imagecache/imagen_interior_articulos/nadal_breno_equipo.jpg?1403550848",
+   "FIELD8": "",
    "FIELD9": "2004",
    "FIELD10": "Brno"
  },
@@ -91,7 +91,7 @@
    "FIELD5": "2014-06-23 19:20:23.469743+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=KyYoLY1f0wE",
+   "FIELD8": "https://www.youtube.com/embed/KyYoLY1f0wE",
    "FIELD9": "2004",
    "FIELD10": "Melbourne"
  },
@@ -103,7 +103,7 @@
    "FIELD5": "2014-06-23 19:24:02.036416+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=oDYsdEzp9is",
+   "FIELD8": "https://www.youtube.com/embed/oDYsdEzp9is",
    "FIELD9": "2004",
    "FIELD10": "New York"
  },
@@ -115,7 +115,7 @@
    "FIELD5": "2014-06-23 19:28:15.47137+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=KivGo8S2ir8",
+   "FIELD8": "https://www.youtube.com/embed/KivGo8S2ir8",
    "FIELD9": "2004",
    "FIELD10": "Sevilla"
  },
@@ -127,7 +127,7 @@
    "FIELD5": "2014-06-23 19:29:47.849461+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=IC8ghCR_puo",
+   "FIELD8": "https://www.youtube.com/embed/IC8ghCR_puo",
    "FIELD9": "2004",
    "FIELD10": "Sopot"
  },
@@ -139,7 +139,7 @@
    "FIELD5": "2014-06-23 19:47:52.157965+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=e3Xsb3x9vVE",
+   "FIELD8": "https://www.youtube.com/embed/e3Xsb3x9vVE",
    "FIELD9": "2005",
    "FIELD10": "Montecarlo"
  },
@@ -151,7 +151,7 @@
    "FIELD5": "2014-06-23 19:51:32.605822+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=RkOhsBWDQHY",
+   "FIELD8": "https://www.youtube.com/embed/RkOhsBWDQHY",
    "FIELD9": "2005",
    "FIELD10": "Roma\n"
  },
@@ -163,7 +163,7 @@
    "FIELD5": "2014-06-23 19:54:48.425777+00",
    "FIELD6": "2014-07-04 17:12:20.207287+00",
    "FIELD7": "torneo01",
-   "FIELD8": "http://www.youtube.com/watch?v=AeEEJyukv3U",
+   "FIELD8": "https://www.youtube.com/embed/AeEEJyukv3U",
    "FIELD9": "2005",
    "FIELD10": "Paris"
  },
@@ -175,7 +175,7 @@
    "FIELD5": "2014-06-23 20:09:25.536805+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=mNavSH599IY",
+   "FIELD8": "https://www.youtube.com/embed/mNavSH599IY",
    "FIELD9": "2005",
    "FIELD10": "Madrid"
  },
@@ -199,7 +199,7 @@
    "FIELD5": "2014-06-23 20:15:10.291499+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "event",
-   "FIELD8": "http://www.youtube.com/watch?v=lAfdlHkhrVs&feature=share&list=PLC33F277A0F862B1F",
+   "FIELD8": "https://www.youtube.com/embed/lAfdlHkhrVs&feature=share&list=PLC33F277A0F862B1F",
    "FIELD9": "2006",
    "FIELD10": "Barcelona"
  },
@@ -211,7 +211,7 @@
    "FIELD5": "2014-06-23 20:19:34.697834+00",
    "FIELD6": "2014-07-04 17:12:28.64045+00",
    "FIELD7": "torneo01",
-   "FIELD8": "http://www.youtube.com/watch?v=6MvgFcQRgcI",
+   "FIELD8": "https://www.youtube.com/embed/6MvgFcQRgcI",
    "FIELD9": "2006",
    "FIELD10": "Paris"
  },
@@ -223,7 +223,7 @@
    "FIELD5": "2014-06-23 20:25:24.264585+00",
    "FIELD6": "2014-07-04 17:12:26.67484+00",
    "FIELD7": "torneo01",
-   "FIELD8": "http://www.youtube.com/watch?v=MIoBSyXPg3M",
+   "FIELD8": "https://www.youtube.com/embed/MIoBSyXPg3M",
    "FIELD9": "2006",
    "FIELD10": "Paris"
  },
@@ -235,7 +235,7 @@
    "FIELD5": "2014-06-23 20:51:52.423694+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=OOQp62NI2_I",
+   "FIELD8": "https://www.youtube.com/embed/OOQp62NI2_I",
    "FIELD9": "2006",
    "FIELD10": "Wimbledon"
  },
@@ -247,7 +247,7 @@
    "FIELD5": "2014-06-23 20:56:44.743662+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=L_0BYCIqA40",
+   "FIELD8": "https://www.youtube.com/embed/L_0BYCIqA40",
    "FIELD9": "2006",
    "FIELD10": "Shangai"
  },
@@ -259,7 +259,7 @@
    "FIELD5": "2014-06-23 21:02:20.800054+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=RMYt6KZZcp4",
+   "FIELD8": "https://www.youtube.com/embed/RMYt6KZZcp4",
    "FIELD9": "2007",
    "FIELD10": "Montecarlo"
  },
@@ -271,7 +271,7 @@
    "FIELD5": "2014-06-23 21:05:29.828398+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=5tc_u_K1L1M",
+   "FIELD8": "https://www.youtube.com/embed/5tc_u_K1L1M",
    "FIELD9": "2007",
    "FIELD10": "Barcelona"
  },
@@ -283,7 +283,7 @@
    "FIELD5": "2014-06-23 21:09:55.214539+00",
    "FIELD6": "2014-07-04 17:12:31.766808+00",
    "FIELD7": "torneo01",
-   "FIELD8": "http://www.youtube.com/watch?v=ndbqfjFMcFQ",
+   "FIELD8": "https://www.youtube.com/embed/ndbqfjFMcFQ",
    "FIELD9": "2007",
    "FIELD10": "Paris"
  },
@@ -295,7 +295,7 @@
    "FIELD5": "2014-06-23 21:15:45.698868+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=1isfZhjpt1k",
+   "FIELD8": "https://www.youtube.com/embed/1isfZhjpt1k",
    "FIELD9": "2007",
    "FIELD10": "Wimbledon"
  },
@@ -307,7 +307,7 @@
    "FIELD5": "2014-06-23 21:34:33.618673+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=ashw7FfqZjU",
+   "FIELD8": "https://www.youtube.com/embed/ashw7FfqZjU",
    "FIELD9": "2008",
    "FIELD10": "Montecarlo"
  },
@@ -319,7 +319,7 @@
    "FIELD5": "2014-06-23 21:36:18.064805+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=MgKSQlloMTQ",
+   "FIELD8": "https://www.youtube.com/embed/MgKSQlloMTQ",
    "FIELD9": "2008",
    "FIELD10": "Barcelona"
  },
@@ -331,7 +331,7 @@
    "FIELD5": "2014-06-23 21:40:34.29771+00",
    "FIELD6": "2014-07-04 17:12:37.519952+00",
    "FIELD7": "torneo01",
-   "FIELD8": "http://www.youtube.com/watch?v=xG8jrzqPW7Q",
+   "FIELD8": "https://www.youtube.com/embed/xG8jrzqPW7Q",
    "FIELD9": "2008",
    "FIELD10": "Paris"
  },
@@ -343,7 +343,7 @@
    "FIELD5": "2014-06-23 21:41:43.656779+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=ek114TyqzXk",
+   "FIELD8": "https://www.youtube.com/embed/ek114TyqzXk",
    "FIELD9": "2008",
    "FIELD10": "Wimbledon"
  },
@@ -355,7 +355,7 @@
    "FIELD5": "2014-06-23 21:44:47.380972+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=hgyq8C3tNrA",
+   "FIELD8": "https://www.youtube.com/embed/hgyq8C3tNrA",
    "FIELD9": "2008",
    "FIELD10": "Pekin"
  },
@@ -367,7 +367,7 @@
    "FIELD5": "2014-06-23 21:47:14.021957+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "event",
-   "FIELD8": "http://www.youtube.com/watch?v=Ns4uV8HS41o",
+   "FIELD8": "https://www.youtube.com/embed/Ns4uV8HS41o",
    "FIELD9": "2008",
    "FIELD10": "Oviedo"
  },
@@ -379,7 +379,7 @@
    "FIELD5": "2014-06-23 21:50:52.356474+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=KkI4FpZDQcc",
+   "FIELD8": "https://www.youtube.com/embed/KkI4FpZDQcc",
    "FIELD9": "2009\n",
    "FIELD10": "Melbourne"
  },
@@ -391,7 +391,7 @@
    "FIELD5": "2014-06-23 21:52:42.736306+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=42qJaSfxp4s",
+   "FIELD8": "https://www.youtube.com/embed/42qJaSfxp4s",
    "FIELD9": "2009",
    "FIELD10": "Montecarlo"
  },
@@ -403,7 +403,7 @@
    "FIELD5": "2014-06-23 21:54:43.040574+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=KK-B6m9naps",
+   "FIELD8": "https://www.youtube.com/embed/KK-B6m9naps",
    "FIELD9": "2009",
    "FIELD10": "Barcelona"
  },
@@ -415,7 +415,7 @@
    "FIELD5": "2014-06-23 22:00:17.676006+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=odbs3EVMFuI",
+   "FIELD8": "https://www.youtube.com/embed/odbs3EVMFuI",
    "FIELD9": "2010\n",
    "FIELD10": "Montecarlo"
  },
@@ -427,7 +427,7 @@
    "FIELD5": "2014-06-23 22:02:18.11824+00",
    "FIELD6": "2014-07-04 17:12:42.433587+00",
    "FIELD7": "torneo01",
-   "FIELD8": "http://www.youtube.com/watch?v=QwKW5caU1SM",
+   "FIELD8": "https://www.youtube.com/embed/QwKW5caU1SM",
    "FIELD9": "2010",
    "FIELD10": "Paris"
  },
@@ -439,7 +439,7 @@
    "FIELD5": "2014-06-23 22:04:45.388142+00",
    "FIELD6": "2014-07-02 12:00:50.421849+00",
    "FIELD7": "torneo",
-   "FIELD8": "http://www.youtube.com/watch?v=OKvGTI2bRqo",
+   "FIELD8": "https://www.youtube.com/embed/OKvGTI2bRqo",
    "FIELD9": "2010",
    "FIELD10": "Wimbledon"
  }

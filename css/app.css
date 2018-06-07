@@ -134,13 +134,20 @@
 
 #title {
   font: 22px/34px 'AvantGarde';
-  margin: 0 0 4px 0;
+  margin: 8px 0 4px 0;
   color: #000;
 }
 #description {
   font-size: 14px;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.6);
+}
+#year {
+	background: rgba(10, 182, 209, .2);
+  font-size: 14px;
+  padding: 4px 8px;
+  color: #000;
+  border-radius: 2px;
 }
 .navigation {
 	display: flex;
@@ -155,18 +162,27 @@
 	position: relative;
 }
 .map-info {
-	width: 300px;
+	display: flex;
 	background: #fff;
 	padding: 20px;
 	position: absolute;
 	right: 0%;
-  padding: 20px;
+  padding: 0;
   z-index: 2;
   bottom: 40px;
   border-radius: 2px;
+}
+.map-infoText {
+	padding: 16px;
+	width: 300px;
+	max-height: 300px;
 }
 .scroll {
 	position: relative;
 	height: 120px;
 	padding-right: 20px;
+}
+
+#media.empty {
+	display: none;
 }

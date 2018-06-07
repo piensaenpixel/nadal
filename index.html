@@ -41,11 +41,16 @@
 	 			<span id="bar">
 
              <div class="map-info">
-                <h3 id="year"></h3>
-                <h2 id="title"></h2>
-                <div class="scroll">
-                  <p id="description"></p>
+                <div class="map-infoText">
+                  <span id="year"></span>
+                  <h2 id="title"></h2>
+                  <div class="scroll">
+                    <p id="description"></p>
+                  </div>
                 </div>
+                <iframe id="media" width="530" height="300" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
 <!--                 <ul class="navigation">
                   <li id="prev">
                     <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -73,7 +78,6 @@
 
 
 
-      <iframe id="media" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
     </section>
 
@@ -135,9 +139,21 @@
 
   /* Functions change content */
   function updateContent(value) {
+
+      var media = document.getElementById("media");
+      console.log(media);
+      document.getElementById("year").innerHTML = data[value].FIELD9;
       document.getElementById("title").innerHTML = data[value].FIELD3;
       document.getElementById("description").innerHTML = data[value].FIELD4;
-      document.getElementById("media").src = data[value].FIELD8;
+      if (data[value].FIELD8 != "") {
+         if (media.classList.contains('empty')) {
+           media.classList.remove('empty');
+          }
+        media.src = data[value].FIELD8;
+      } else {
+        media.classList.add('empty');
+      }
+      
 
       var coordinates = data[value].FIELD1.split(", ");
       map.flyTo({
@@ -146,6 +162,7 @@
 
       console.log(coordinates);
       console.log(data[value].FIELD1);
+      console.log(data[value].FIELD9);
 
       var width =  window.outerWidth;
       var step = (width / data.length) * (value + 1);

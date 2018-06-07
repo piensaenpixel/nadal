@@ -210,12 +210,14 @@
 		width: 80px;
 	}
 	#map_inner {
-		display: flex;
-		flex-direction: column;
+		display: block;
 	}
 	.timeline, #map {
-		position: relative;
-		flex: 1;
+    position: static;
+    height: auto;
+	}
+	#map {
+		height: 100%;
 	}
 	.map-infoText {
 		width: 100%;
@@ -226,5 +228,11 @@
 	}
 	#bar {
 		width: 100% !important;
+	}
+	.scroll {
+		display: none;
+	}
+	.mapboxgl-canvas-container.mapboxgl-touch-drag-pan {
+		height: 100%;
 	}
 }

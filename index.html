@@ -42,9 +42,7 @@
 	 			<span id="bar">
 
              <div class="map-info">
-                <div id="video-container">
-                  <iframe id="media" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                  
-                </div>
+
                 <div class="map-infoText">
                   <span id="year"></span>
                   <h2 id="title"></h2>
@@ -52,6 +50,10 @@
                     <p id="description"></p>
                   </div>
                 </div>
+                <div id="video-container">
+                  <iframe width="426" height="247" id="media" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                  
+                </div>
+
               </div>
 
 
@@ -91,9 +93,22 @@
         strokeWidth: 18;
         strokeColor: rgba(245, 166, 35, .2)
       `);
-
       const layer = new carto.Layer('layer', source, viz);
+
+
+      const lines = new carto.source.SQL(`
+          SELECT * FROM nadal_lines
+      `);
+
+
+      const nadalLinesViz = new carto.Viz();
+      const nadaLineLayers = new carto.Layer('nadaLineLayers', lines, nadalLinesViz);
+
+
+
       layer.addTo(map, 'watername_ocean');
+      nadaLineLayers.addTo(map, 'layer');
+
 
 
   /* vars */
@@ -121,11 +136,29 @@
 
   request.send();
 
+  /* tooltip position */
+  function offset(el) {
+    var rect = el.getBoundingClientRect(),
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+  }
+
+
   /* Functions change content */
   function updateContent(value) {
+      // var tooltip = document.querySelector('.map-info');
+      // tooltip.style.transform= "translateX(0)";
 
+      // var tooltipOffset = offset(tooltip);
+
+      // if (value <= 3) {
+      //   tooltip.style.transform="translateX(-50%)"
+      // } else {
+      //   tooltip.style.transform = "translateX(-200px)"
+      // }
+      document.getElementById("media").src = "";
       var media = document.getElementById("video-container");
-      console.log(media);
       document.getElementById("year").innerHTML = data[value].FIELD9;
       document.getElementById("title").innerHTML = data[value].FIELD3;
       document.getElementById("description").innerHTML = data[value].FIELD4;
@@ -144,14 +177,8 @@
             center: [coordinates[0], coordinates[1]]
       });
 
-      console.log(coordinates);
-      console.log(data[value].FIELD1);
-      console.log(data[value].FIELD9);
-
       var width =  window.outerWidth;
       var step = (width / data.length) * (value + 1);
-      console.log(width);
-      console.log(step);
       document.getElementById("bar").style.width = step + 'px';
   }
 

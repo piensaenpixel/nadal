@@ -140,16 +140,6 @@
 
   /* Functions change content */
   function updateContent(value) {
-      // var tooltip = document.querySelector('.map-info');
-      // tooltip.style.transform= "translateX(0)";
-
-      // var tooltipOffset = offset(tooltip);
-
-      // if (value <= 3) {
-      //   tooltip.style.transform="translateX(-50%)"
-      // } else {
-      //   tooltip.style.transform = "translateX(-200px)"
-      // }
       document.getElementById("media").src = "";
       var media = document.getElementById("video-container");
       document.getElementById("year").innerHTML = data[value].FIELD9;
@@ -172,7 +162,9 @@
 
       var width =  window.outerWidth;
       var step = (width / data.length) * (value + 1);
-      document.getElementById("bar").style.width = step + 'px';
+      if (value < data.length) {
+        document.getElementById("bar").style.width = step + 'px';
+      }
   }
 
   function next(){

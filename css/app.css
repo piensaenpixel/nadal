@@ -138,8 +138,8 @@
 
 #title {
 	font: 18px/26px 'AvantGarde';
-  margin: 0 0 8px 0;
-  color: #FFF;
+	  margin: 0 0 8px 0;
+	  color: #FFF;
 }
 #description {
   font-size: 14px;
@@ -169,22 +169,34 @@
 	position: absolute;
 	left: 40px;
 	top: 60px;
-}
-.map-infoText {
 	width: 400px;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 32px;
 }
+
 .scroll {
 	position: relative;
 	height: 120px;
 	padding-right: 20px;
-	margin-bottom: 40px;
 }
 
+#video-container {
+	margin: 20px -32px 0 -32px;
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
 #video-container.empty {
 	display: none;
 }
 #video-container iframe {
-	margin-bottom: -7px;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
 }
 
 

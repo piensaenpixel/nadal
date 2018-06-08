@@ -36,6 +36,10 @@
 
 		 <section id="map_inner">
       <div class="map-info">
+      <div class="timeline" id="infoTimeline">
+        <span id="bar"></span>
+      </div>
+
           <h1 class="map-title">Nadal - his career story</h1>
           <div class="map-infoText">
             <span id="year"></span>
@@ -49,9 +53,7 @@
           </div>
       </div>
 
-	 		<div class="timeline" id="infoTimeline">
-	 			<span id="bar"></span>
-	 		</div>
+
       
       <div id="map"></div>
       <div id="cursor"><img src="img/cursors.png" ></div>
@@ -156,7 +158,7 @@
                   center: [coordinates[0], coordinates[1]]
             });
 
-            var width =  window.outerWidth;
+            var width =  document.querySelector('.map-info').offsetWidth;
             var step = (width / data.length) * (value + 1);
             if (value < data.length) {
               document.getElementById("bar").style.width = step + 'px';

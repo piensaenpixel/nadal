@@ -80,11 +80,11 @@
       const s = carto.expressions;
       const source = new carto.source.Dataset('nadal');
       const viz = new carto.Viz(`
-        width: 6
-        color: ramp($infowindow,Prism)
+        width: 12
+        color: #0ab6d1
         resolution: 0.2
-        strokeWidth: 18;
-        strokeColor: rgba(245, 166, 35, .2)
+        strokeWidth: 30;
+        strokeColor: rgba(255, 255, 255, .2)
       `);
       const layer = new carto.Layer('layer', source, viz);
 

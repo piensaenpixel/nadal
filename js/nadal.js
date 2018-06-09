@@ -81,7 +81,7 @@ function updateContent(value) {
 
 
     if (data[value].FIELD8 != "") {
-       showMore.style.display = 'block';
+       showMore.classList.add('show');
        var click = true;
        showMore.addEventListener("click", function(){
           if (click == true) {
@@ -101,7 +101,7 @@ function updateContent(value) {
         }
        document.getElementById("media").src = data[value].FIELD8;
     } else {
-      document.querySelector("#more").style.display = 'none';
+      showMore.classList.add('remove');
       media.classList.add('empty');
     }
     var coordinates = data[value].FIELD1.split(", ");

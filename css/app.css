@@ -270,18 +270,13 @@
 	}
 
 	.map-title {
-		font: 18px 'AvantGarde';
-    letter-spacing: -1px;
-		margin-bottom: 12px;
+		display: none;
 	}
 	.scroll {
 		display: none;
 	}
 	.mapboxgl-canvas-container.mapboxgl-touch-drag-pan {
 		height: 100%;
-	}
-	#more {
-		display: block;
 	}
 	#video-container {
 		display: none;

@@ -93,15 +93,13 @@ function updateContent(value) {
             showMore.innerHTML = 'Show video'
             click = true;
           }
-
        }, false);
-
        if (media.classList.contains('empty')) {
          media.classList.remove('empty');
         }
        document.getElementById("media").src = data[value].FIELD8;
     } else {
-      showMore.classList.add('remove');
+      showMore.classList.remove('show');
       media.classList.add('empty');
     }
     var coordinates = data[value].FIELD1.split(", ");

@@ -212,6 +212,12 @@
   line-height: 22px;
   display: none;
 }
+.cursor-desktop {
+	display: block;
+}
+.cursor-mobile {
+	display: none;
+}
 
 @media (max-width: 600px) {
 
@@ -243,6 +249,7 @@
 	}
 	#map {
 		height: 100%;
+		pointer-events: none;
 	}
 	.map-infoText {
 		width: 100%;
@@ -273,4 +280,16 @@
 	#video-container.show-mobile {
 		display: block;
 	}
+	.cursor-desktop {
+		display: none;
+	}
+	.cursor-mobile {
+		display: block;
+	}
+	#cursor {
+		bottom: 60px;
+		right: 12px;
+	}
+
+
 }

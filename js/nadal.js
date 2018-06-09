@@ -174,7 +174,7 @@ let touchendX = 0;
 let touchendY = 0;
 
 const limit = Math.tan(45 * 1.5 / 180 * Math.PI);
-const gestureZone = document.querySelector('.map-info');
+const gestureZone = document.querySelector('body');
 
 gestureZone.addEventListener('touchstart', function(event) {
     touchstartX = event.changedTouches[0].screenX;

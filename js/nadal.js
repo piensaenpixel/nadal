@@ -118,6 +118,9 @@ showDescription.addEventListener("click", function(){
 /* Functions change content */
 function updateContent(value) {
     document.getElementById("media").src = "";
+    showDescriptionContainer.classList.remove('is-active');
+    showText = true;
+
     media.classList.remove('show-mobile');
     showVideoText = true;
 
@@ -130,7 +133,6 @@ function updateContent(value) {
        showMore.addEventListener("click", function(){
           showVideo();
        }, false);
-
     if (media.classList.contains('empty')) {
          media.classList.remove('empty');
         }
@@ -235,5 +237,14 @@ function handleGesture(e) {
                 prev();
             }
         }
+        if (xy <= limit) {
+            if (y < 0) {
+                console.log("top");
+            } else {
+                console.log("bottom");
+            }
+        }
+    } else {
+        console.log("tap");
     }
 }

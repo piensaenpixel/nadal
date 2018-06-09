@@ -227,7 +227,12 @@
 	text-decoration: none;
   font-size: 14px;
   line-height: 22px;
-  display: block;
+}
+#video {
+	display: none;
+}
+#showDescription {
+	display: block;
 }
 
 
@@ -235,8 +240,8 @@
 	.actions {
 		display: flex;
 	}
-	#more.show {
-		display: block;
+	#video.show {
+		display: flex;
 	}
 	#title {
 		font-size: 24px;
@@ -289,6 +294,10 @@
 	.scroll {
 		display: none;
 	}
+		.scroll.is-active {
+			margin-top: 20px;
+			display: block;
+		}
 	.mapboxgl-canvas-container.mapboxgl-touch-drag-pan {
 		height: 100%;
 	}

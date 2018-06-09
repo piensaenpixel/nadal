@@ -71,31 +71,67 @@ function offset(el) {
   return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 }
 
+var showDescription = document.querySelector("#showDescription");
+var showDescriptionContainer = document.querySelector(".scroll");
+var showText = true
+var showVideoText = true
+var showMore =  document.querySelector("#video");
+var media = document.querySelector("#video-container");
+
+
+
+function showScroll () {
+  if (showText == true) {
+    showDescriptionContainer.classList.add('is-active');
+    showText = false;
+    media.classList.remove('show-mobile');
+    showVideoText = true;
+  } else {
+    showDescriptionContainer.classList.remove('is-active');
+    showText = true;
+    media.classList.remove('show-mobile');
+    showVideoText = true;
+  }
+
+}
+
+function showVideo() {
+  if (showVideoText == true) {
+    media.classList.add('show-mobile');
+    showVideoText = false;
+    showDescriptionContainer.classList.remove('is-active');
+    showText = true;
+  } else {
+    media.classList.remove('show-mobile');
+    showVideoText = true;
+    showDescriptionContainer.classList.remove('is-active');
+    showText = true;
+  }
+}
+
+
+showDescription.addEventListener("click", function(){
+   showScroll();
+}, false);
+
+
 /* Functions change content */
 function updateContent(value) {
-    var showMore =  document.querySelector("#more");
     document.getElementById("media").src = "";
-    var media = document.getElementById("video-container");
     media.classList.remove('show-mobile');
+    showVideoText = true;
+
     document.getElementById("year").innerHTML = data[value].FIELD9;
     document.getElementById("place").innerHTML = data[value].FIELD10;
     document.getElementById("title").innerHTML = data[value].FIELD3;
     document.getElementById("description").innerHTML = data[value].FIELD4;
-
-
     if (data[value].FIELD8 != "") {
        showMore.classList.add('show');
-       var click = true;
        showMore.addEventListener("click", function(){
-          if (click == true) {
-            media.classList.add('show-mobile');
-            click = false;
-          } else {
-            media.classList.remove('show-mobile');
-            click = true;
-          }
+          showVideo();
        }, false);
-       if (media.classList.contains('empty')) {
+
+    if (media.classList.contains('empty')) {
          media.classList.remove('empty');
         }
        document.getElementById("media").src = data[value].FIELD8;
@@ -195,20 +231,9 @@ function handleGesture(e) {
         if (yx <= limit) {
             if (x < 0) {
                 next();
-                console.log("left");
             } else {
-                console.log("left");
                 prev();
             }
         }
-        if (xy <= limit) {
-            if (y < 0) {
-                console.log("top");
-            } else {
-                console.log("bottom");
-            }
-        }
-    } else {
-        console.log("tap");
     }
 }

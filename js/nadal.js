@@ -114,29 +114,35 @@ showDescription.addEventListener("click", function(){
    showScroll();
 }, false);
 
+showMore.addEventListener("click", function(){
+  showVideo();
+}, false);
+
 
 /* Functions change content */
 function updateContent(value) {
-    document.getElementById("media").src = "";
     showDescriptionContainer.classList.remove('is-active');
     showText = true;
 
     media.classList.remove('show-mobile');
     showVideoText = true;
 
+    document.getElementById("media").src = "";
     document.getElementById("year").innerHTML = data[value].FIELD9;
     document.getElementById("place").innerHTML = data[value].FIELD10;
     document.getElementById("title").innerHTML = data[value].FIELD3;
     document.getElementById("description").innerHTML = data[value].FIELD4;
     if (data[value].FIELD8 != "") {
+
        showMore.classList.add('show');
-       showMore.addEventListener("click", function(){
-          showVideo();
-       }, false);
-    if (media.classList.contains('empty')) {
+
+
+       if (media.classList.contains('empty')) {
          media.classList.remove('empty');
         }
+
        document.getElementById("media").src = data[value].FIELD8;
+
     } else {
       showMore.classList.remove('show');
       media.classList.add('empty');
@@ -232,8 +238,10 @@ function handleGesture(e) {
     if (Math.abs(x) > treshold || Math.abs(y) > treshold) {
         if (yx <= limit) {
             if (x < 0) {
+                media.classList.remove('show-mobile');
                 next();
             } else {
+                media.classList.remove('show-mobile');
                 prev();
             }
         }

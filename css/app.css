@@ -146,9 +146,10 @@
   line-height: 22px;
   color: rgba(255, 255, 255, 0.6);
 }
-#year {
-  font-size: 14px;
-  color: #fff;
+#year, #place {
+  font-size: 12px;
+  color: rgba(255, 255, 255, .8);
+  text-transform: uppercase;
 }
 .navigation {
 	display: flex;
@@ -181,7 +182,7 @@
 }
 
 #video-container {
-	margin: 20px -32px 0 -32px;
+	margin: 24px -32px 0 -32px;
 	position:relative;
 	padding-bottom:56.25%;
 	padding-top:30px;
@@ -205,14 +206,6 @@
 	z-index: 2;
 }
 
-#more {
-	color: #0ab6d1;
-	text-decoration: none;
-  font-size: 14px;
-  line-height: 22px;
-  display: none;
-}
-
 .cursor-desktop {
 	display: block;
 }
@@ -220,7 +213,28 @@
 	display: none;
 }
 
+.actions {
+	display: none;
+}
+.actions li {
+	margin-right: 20px;
+}
+.actions li:last-child {
+	margin-right: 0;
+}
+.actions-link {
+	color: #0ab6d1;
+	text-decoration: none;
+  font-size: 14px;
+  line-height: 22px;
+  display: block;
+}
+
+
 @media (max-width: 600px) {
+	.actions {
+		display: flex;
+	}
 	#more.show {
 		display: block;
 	}
@@ -291,8 +305,11 @@
 		display: block;
 	}
 	#cursor {
-		bottom: 60px;
-		right: 12px;
+		bottom: 20px;
+		right: 20px;
+	}
+	.mapboxgl-ctrl-bottom-right {
+		display: none !important;
 	}
 
 

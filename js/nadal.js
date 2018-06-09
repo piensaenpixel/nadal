@@ -13,7 +13,7 @@ const map = new mapboxgl.Map({
   container: 'map',
   style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
   center: [3.1975198, 39.5699649],
-  zoom: 10,
+  zoom: 14,
   dragRotate: false
 });
 
@@ -22,7 +22,7 @@ carto.setDefaultAuth({
   apiKey: 'default_public'
 });
 const s = carto.expressions;
-const source = new carto.source.Dataset('nadal');
+const source = new carto.source.Dataset('nadal_copy');
 const viz = new carto.Viz(`
   width: 12
   color: #0ab6d1
@@ -30,6 +30,9 @@ const viz = new carto.Viz(`
   strokeWidth: 30;
   strokeColor: rgba(255, 255, 255, .2)
 `);
+
+
+
 const layer = new carto.Layer('layer', source, viz);
 layer.addTo(map, 'watername_ocean');
 
@@ -71,11 +74,11 @@ function offset(el) {
 /* Functions change content */
 function updateContent(value) {
     var showMore =  document.querySelector("#more");
-    showMore.innerHTML = 'Show video'
     document.getElementById("media").src = "";
     var media = document.getElementById("video-container");
     media.classList.remove('show-mobile');
     document.getElementById("year").innerHTML = data[value].FIELD9;
+    document.getElementById("place").innerHTML = data[value].FIELD10;
     document.getElementById("title").innerHTML = data[value].FIELD3;
     document.getElementById("description").innerHTML = data[value].FIELD4;
 
@@ -86,11 +89,9 @@ function updateContent(value) {
        showMore.addEventListener("click", function(){
           if (click == true) {
             media.classList.add('show-mobile');
-            showMore.innerHTML = 'Hide video'
             click = false;
           } else {
             media.classList.remove('show-mobile');
-            showMore.innerHTML = 'Show video'
             click = true;
           }
        }, false);

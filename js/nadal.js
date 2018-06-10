@@ -43,6 +43,13 @@ var position = 1;
 var data;
 var elNext = document.getElementById("next");
 var elPrev = document.getElementById("prev");
+var showDescription = document.querySelector("#showDescription");
+var showDescriptionContainer = document.querySelector(".scroll");
+var showText = true
+var showVideoText = true
+var showMore =  document.querySelector("#video");
+var media = document.querySelector("#video-container");
+
 
 
 /* read json */
@@ -70,14 +77,6 @@ function offset(el) {
   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 }
-
-var showDescription = document.querySelector("#showDescription");
-var showDescriptionContainer = document.querySelector(".scroll");
-var showText = true
-var showVideoText = true
-var showMore =  document.querySelector("#video");
-var media = document.querySelector("#video-container");
-
 
 
 function showScroll () {
@@ -203,56 +202,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.onkeydown = checkKey;
 
+/* Change content */
+
 var ps = new PerfectScrollbar('.scroll');
 
-
-
-
-/* Swipe */
-let pageWidth = window.innerWidth || document.body.clientWidth;
-let treshold = Math.max(1,Math.floor(0.01 * (pageWidth)));
-let touchstartX = 0;
-let touchstartY = 0;
-let touchendX = 0;
-let touchendY = 0;
-
-const limit = Math.tan(45 * 1.5 / 180 * Math.PI);
-const gestureZone = document.querySelector('body');
-
-gestureZone.addEventListener('touchstart', function(event) {
-    touchstartX = event.changedTouches[0].screenX;
-    touchstartY = event.changedTouches[0].screenY;
-}, false);
-
-gestureZone.addEventListener('touchend', function(event) {
-    touchendX = event.changedTouches[0].screenX;
-    touchendY = event.changedTouches[0].screenY;
-    handleGesture(event);
-}, false);
-
-function handleGesture(e) {
-    let x = touchendX - touchstartX;
-    let y = touchendY - touchstartY;
-    let xy = Math.abs(x / y);
-    let yx = Math.abs(y / x);
-    if (Math.abs(x) > treshold || Math.abs(y) > treshold) {
-        if (yx <= limit) {
-            if (x < 0) {
-                media.classList.remove('show-mobile');
-                next();
-            } else {
-                media.classList.remove('show-mobile');
-                prev();
-            }
-        }
-        if (xy <= limit) {
-            if (y < 0) {
-                console.log("top");
-            } else {
-                console.log("bottom");
-            }
-        }
-    } else {
-        console.log("tap");
-    }
-}

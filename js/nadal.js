@@ -120,6 +120,8 @@ showMore.addEventListener("click", function(){
 
 /* Functions change content */
 function updateContent(value) {
+
+    checkPosition()
     showDescriptionContainer.classList.remove('is-active');
     showText = true;
 
@@ -156,6 +158,20 @@ function updateContent(value) {
     if (value < data.length) {
       document.getElementById("bar").style.width = step + 'px';
     }
+}
+
+function checkPosition(){
+  if (position <= 1) {
+    elPrev.style.opacity=(".4");
+  } else {
+    elPrev.style.opacity=("1");
+  }
+
+  if (position == data.length || position == data.length-1) {
+    elNext.style.opacity=(".4");
+  } else {
+    elNext.style.opacity=("1");
+  }
 }
 
 function next(){

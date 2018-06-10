@@ -121,15 +121,22 @@ function showVideo() {
 
 showDescription.addEventListener("click", function(){
    showScroll();
+   showMore.classList.remove('is-active');
+   this.classList.toggle('is-active');
+
 }, false);
 
 showMore.addEventListener("click", function(){
   showVideo();
+  showDescription.classList.remove('is-active');
+  this.classList.toggle('is-active');
 }, false);
 
 
 /* Functions change content */
 function updateContent(value) {
+    showMore.classList.remove('is-active');
+    showDescription.classList.remove('is-active');
 
     checkPosition()
     showDescriptionContainer.classList.remove('is-active');

@@ -204,6 +204,7 @@
 
 .actions {
 	display: none;
+	margin-left: -4px;
 }
 .actions li {
 	margin-right: 20px;
@@ -216,7 +217,13 @@
 	text-decoration: none;
   font-size: 14px;
   line-height: 22px;
+  padding: 0 4px;
 }
+	.actions-link.is-active {
+		background: #0ab6d1;
+		color: #fff;
+	}
+
 #video {
 	display: none;
 }

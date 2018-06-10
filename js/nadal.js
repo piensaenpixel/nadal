@@ -9,11 +9,20 @@ play.addEventListener('click',function () {
 
 
  /* map */
+
+/* map config */
+if (screen.width <= 600) {
+  var zoomLevel = 15;
+} else {
+  var zoomLevel = 14;
+}
+
+
 const map = new mapboxgl.Map({
   container: 'map',
   style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
   center: [3.1975198, 39.5699649],
-  zoom: 14,
+  zoom: zoomLevel,
   dragRotate: false
 });
 
@@ -49,6 +58,7 @@ var showText = true
 var showVideoText = true
 var showMore =  document.querySelector("#video");
 var media = document.querySelector("#video-container");
+
 
 
 

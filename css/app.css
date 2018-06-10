@@ -285,6 +285,7 @@
 	.scroll {
 		display: none;
 		max-height: 200px;
+		height: 100%;
 	}
 		.scroll.is-active {
 			margin-top: 20px;

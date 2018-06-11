@@ -11,12 +11,12 @@ play.addEventListener('click',function () {
  /* map */
 
 /* map config */
+console.log(screen.width);
 if (screen.width <= 600) {
-  var zoomLevel = 15;
+  var zoomLevel = 13;
 } else {
-  var zoomLevel = 14;
+  var zoomLevel = 12;
 }
-
 
 const map = new mapboxgl.Map({
   container: 'map',
